@@ -37,4 +37,7 @@ Fungsi **filter_data()** akan memfilter sesuai masukan yang diinginkan
 Contoh keluaran nama file :
 - Untuk tabel per komoditas dari tabel 8.11 komoditas 6209, berubah nama menjadi 8_11_6209.xlsx
 
+Contoh output tabel :
+![img](https://i.ibb.co.com/s9HPhwG/Screenshot-2024-08-11-081757.png)
+
 _Catatan : File dan sheet name sudah otomatis mengambil dari nama tabel mentah secara default, sehingga pengguna tidak perlu mengotak-atik nama tabel mentah yang akan difilter._
