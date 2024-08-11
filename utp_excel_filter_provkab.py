@@ -84,7 +84,7 @@ def filter_data(inp, outp, set, kode, nama):
 
 # contoh pemakaian :
 filter_data(inp=folder_data, outp=folder_outp, set='prov', kode=32, nama='JAWA BARAT')
-filter_data(inp=folder_data, outp=folder_outp, set='prov', kode=6401, nama='PASER')
+filter_data(inp=folder_data, outp=folder_outp, set='kab', kode=6401, nama='PASER')
 
 # Expected output : tabel XLSX yang memuat data sejumlah kecamatan terfilter dengan sum dan nama kabupaten di paling bawah
 #                   ditambah dengan En Dash untuk missing value, nama file adalah nomor tabel_kode komoditas
