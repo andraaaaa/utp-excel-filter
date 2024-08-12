@@ -9,8 +9,11 @@ Source Code untuk memisahkan file sesuai filter provinsi atau kabupaten dalam ra
 - Python versi >= 3.9
 - pandas 2.2.2
 - openpyxl 3.1.5
+- xlrd 2.0.1
 - pip v24.2
 
+One-time line install :
+`pip install "pandas==2.2.2" "openpyxl==3.1.5" "xlrd==2.0.1"`
   
 **Catatan Atas**
 - Nama file yang digunakan sebagai input (nonsingle) : **Nasional_Tabulasi_UTP_BAB_ [nomorbab] _tabel _[nomor_tabel_dgn_underscore] _komoditas _[kode_komoditas]**
