@@ -7,6 +7,7 @@ Source Code untuk memisahkan file sesuai filter provinsi atau kabupaten dalam ra
 
 **Catatan Atas**
 - Harap dijalankan dengan bahasa Python dengan versi >= 3.6
+- Nama file yang digunakan sebagai input : **Nasional_Tabulasi_UTP_BAB_ [nomorbab] _tabel _[nomor_tabel_dgn_underscore] _komoditas _[kode_komoditas]**
 - Code ini masih dalam tahap pengembangan, untuk fungsi dasar sudah berjalan sebagaimana mestinya.
 
 ### **Persiapan**
