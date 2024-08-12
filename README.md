@@ -1,3 +1,5 @@
+[!] **Update** : Excel Filter file-to-file sudah tersedia. Silakan gunakan jika skema tidak works dengan kumpulan file dalam folder.
+
 ## Python Code Filter Data Excel untuk Publikasi UTP
 Source Code untuk memisahkan file sesuai filter provinsi atau kabupaten dalam rangka penyusunan Publikasi ST2023 UTP Tahap II.
 
