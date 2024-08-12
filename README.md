@@ -5,8 +5,14 @@ Source Code untuk memisahkan file sesuai filter provinsi atau kabupaten dalam ra
 
 **Ekspektasi keluaran fungsi :** Membuat file berformat XLSX sesuai dengan filter provinsi dan kabupaten/kota yang diinginkan beserta agregatnya.
 
+**Minimum Requirements**
+- Python versi >= 3.9
+- pandas 2.2.2
+- openpyxl 3.1.5
+- pip v24.2
+
+  
 **Catatan Atas**
-- Harap dijalankan dengan bahasa Python dengan versi >= 3.6
 - Nama file yang digunakan sebagai input (nonsingle) : **Nasional_Tabulasi_UTP_BAB_ [nomorbab] _tabel _[nomor_tabel_dgn_underscore] _komoditas _[kode_komoditas]**
 - Code ini masih dalam tahap pengembangan, untuk fungsi dasar sudah berjalan sebagaimana mestinya.
 
