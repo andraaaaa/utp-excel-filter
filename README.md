@@ -1,6 +1,8 @@
-**[!] Update** : Excel Filter file-to-file sudah tersedia. Silakan gunakan jika skema tidak works dengan kumpulan file dalam folder.
+**[!] Update** :
+1. Excel Reformatter tersedia, alternatif jika formatter di fungsi filter_data() tidak berfungsi.
+2. Excel File Merger tersedia untuk menggabungkan seluruh file menjadi 1 File Excel banyak sheet
 
-## Python Code Filter Data Excel untuk Publikasi UTP
+## Python Code Filter dan Merger Data Excel untuk Publikasi UTP
 Source Code untuk memisahkan file sesuai filter provinsi atau kabupaten dalam rangka penyusunan Publikasi ST2023 UTP Tahap II.
 
 **Ekspektasi keluaran fungsi :** Membuat file berformat XLSX sesuai dengan filter provinsi dan kabupaten/kota yang diinginkan beserta agregatnya.
@@ -34,6 +36,10 @@ Fungsi **make_xlsx_name()** men-generate nama file Excel hasil filter
 
 Fungsi **filter_data()** akan memfilter sesuai masukan yang diinginkan
 
+Fungsi **reformat()** melakukan reformatting angka khususnya ribuan dan desimal
+
+Fungsi **merge_data()** menggabungkan seluruh file excel menjadi sheet dalam satu file baru
+
 ---
 **Parameter untuk filter_data():**
 
@@ -54,3 +60,12 @@ Contoh output tabel :
 ![img](https://i.ibb.co.com/s9HPhwG/Screenshot-2024-08-11-081757.png)
 
 _Catatan : File dan sheet name sudah otomatis mengambil dari nama tabel mentah secara default, sehingga pengguna tidak perlu mengotak-atik nama tabel mentah yang akan difilter._
+
+### Data Reformatting dan Merging (Optional)
+Untuk kemudahan melakukan copy paste data dengan format yang sudah sesuai dan manajemen file lebih efisien, dapat dilakukan penggabungan seluruh file menjadi satu sheet dalam satu file Excel.
+
+Contoh output reformatting dan merging data :
+
+![img](https://i.ibb.co.com/KqV6kzn/merger.png)
+
+Contoh penggunaan sudah terlampir dalam kode sumber.
