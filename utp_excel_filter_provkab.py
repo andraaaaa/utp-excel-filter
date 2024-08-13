@@ -9,7 +9,7 @@ import re, os
 rm_prov = [0, 2, 3]
 rm_kab = [0, 1, 3, 4, 5]
 
-def format_excel_file(file_path):
+def reformat(file_path):
     # Memuat workbook
     wb = load_workbook(file_path)
     
@@ -22,7 +22,7 @@ def format_excel_file(file_path):
             cell.alignment = Alignment(wrap_text=True)
     wb.save(file_path)
 
-def merge_excel_files(folder_path, output_file):
+def merge_data(folder_path, output_file):
     new_wb = openpyxl.Workbook()
     new_wb.remove(new_wb.active)  # Hapus sheet default
 
@@ -154,7 +154,7 @@ filter_data(inp=folder_data, outp=folder_outp, set='prov', kode=32, nama='JAWA B
 filter_data(inp=folder_data, outp=folder_outp, set='kab', kode=6401, nama='PASER')
 
 # contoh pemakaian untuk reformat file :
-format_excel_file("D:\\file_excel_yang_mau_diformat.xlsx")
+reformat("D:\\file_excel_yang_mau_diformat.xlsx")
 
 # contoh pemakaian untuk merging excel menjadi 1 file banyak sheet :
-merge_excel_files("folder_yang_akan_dimerge", "nama_file.xlsx")
+merge_data("folder_yang_akan_dimerge", "nama_file.xlsx")
