@@ -53,9 +53,13 @@ Fungsi **merge_data()** menggabungkan seluruh file excel menjadi sheet dalam sat
 Contoh keluaran nama file :
 - Untuk tabel per komoditas dari tabel 8.11 komoditas 6209, berubah nama menjadi 8_11_6209.xlsx
 
-Contoh output tabel :
+Contoh output tabel provinsi :
 
 ![img](https://i.ibb.co.com/0tKrVNw/Screenshot-2024-08-18-203510.png)
+
+Contoh output tabel kabupaten :
+
+![img](https://i.ibb.co.com/mvmXWBR/Screenshot-2024-08-18-204018-n.png)
 
 _Catatan : File dan sheet name sudah otomatis mengambil dari nama tabel mentah secara default, sehingga pengguna tidak perlu mengotak-atik nama tabel mentah yang akan difilter._
 
