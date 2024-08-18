@@ -148,8 +148,5 @@ def filter_data(inp, outp, set, kode, nama):
 filter_data(inp=folder_data, outp=folder_outp, set='prov', kode=32, nama='JAWA BARAT')
 filter_data(inp=folder_data, outp=folder_outp, set='kab', kode=6401, nama='PASER')
 
-# contoh pemakaian untuk reformat file :
-reformat("D:\\file_excel_yang_mau_diformat.xlsx")
-
 # contoh pemakaian untuk merging excel menjadi 1 file banyak sheet :
-merge_data("folder_yang_akan_dimerge", "nama_file.xlsx")
+merge_data("folder_yang_akan_dimerge", "path_ke_nama_file.xlsx")
