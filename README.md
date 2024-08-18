@@ -1,6 +1,6 @@
-**[!] Update** :
-1. Excel Reformatter tersedia, alternatif jika formatter di fungsi filter_data() tidak berfungsi.
-2. Excel File Merger tersedia untuk menggabungkan seluruh file menjadi 1 File Excel banyak sheet
+**[!!] Update 18 Agustus** :
+
+Reformatter sudah dimasukkan dengan fungsi inti sebelum export data
 
 ## Python Code Filter dan Merger Data Excel untuk Publikasi UTP
 Source Code untuk memisahkan file sesuai filter provinsi atau kabupaten dalam rangka penyusunan Publikasi ST2023 UTP Tahap II.
