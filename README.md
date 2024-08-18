@@ -5,7 +5,7 @@ Reformatter sudah dimasukkan dengan fungsi inti sebelum export data
 ## Python Code Filter dan Merger Data Excel untuk Publikasi UTP
 Source Code untuk memisahkan file sesuai filter provinsi atau kabupaten dalam rangka penyusunan Publikasi ST2023 UTP Tahap II.
 
-**Ekspektasi keluaran fungsi :** Membuat file berformat XLSX sesuai dengan filter provinsi dan kabupaten/kota yang diinginkan beserta agregatnya.
+**Ekspektasi keluaran fungsi :** Membuat file berformat XLSX sesuai dengan filter provinsi dan kabupaten/kota yang diinginkan beserta angka agregat dan format angkanya.
 
 **Minimum Requirements**
 - Python versi >= 3.9
@@ -36,8 +36,6 @@ Fungsi **make_xlsx_name()** men-generate nama file Excel hasil filter
 
 Fungsi **filter_data()** akan memfilter sesuai masukan yang diinginkan
 
-Fungsi **reformat()** melakukan reformatting angka khususnya ribuan dan desimal
-
 Fungsi **merge_data()** menggabungkan seluruh file excel menjadi sheet dalam satu file baru
 
 ---
@@ -61,10 +59,10 @@ Contoh output tabel :
 
 _Catatan : File dan sheet name sudah otomatis mengambil dari nama tabel mentah secara default, sehingga pengguna tidak perlu mengotak-atik nama tabel mentah yang akan difilter._
 
-### Data Reformatting dan Merging (Optional)
+### Data Merging (Optional)
 Untuk kemudahan melakukan copy paste data dengan format yang sudah sesuai dan manajemen file lebih efisien, dapat dilakukan penggabungan seluruh file menjadi satu sheet dalam satu file Excel.
 
-Contoh output reformatting dan merging data :
+Contoh output merging data :
 
 ![img](https://i.ibb.co.com/KqV6kzn/merger.png)
 
