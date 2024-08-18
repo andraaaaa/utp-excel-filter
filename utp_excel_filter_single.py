@@ -40,6 +40,12 @@ def filter_data(inp, outp, set, kode, nama):
     elif set == 'kab':
         df6401.iloc[sz-1, 2] = nama
         df6401 = df6401.drop(df6401.columns[rm_kab], axis=1)
+        
+    for col in range(1, len(df6401.columns)):
+        if df6401.iloc[:, col].dtype.kind in 'i':
+            df6401.iloc[:, col] = df6401.iloc[:, col].map('{:,}'.format)
+        elif df6401.iloc[:, col].dtype.kind in 'f':
+            df6401.iloc[:, col] = df6401.iloc[:, col].map('{:,.2f}'.format)
 
     df6401.fillna("–", inplace=True)    
     df6401.to_excel(outp, sheet_name="Nama Sheet") # Edit nama sheet atau hapus sheet_name untuk default
