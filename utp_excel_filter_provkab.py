@@ -9,19 +9,6 @@ import re, os
 rm_prov = [0, 2, 3]
 rm_kab = [0, 1, 3, 4, 5]
 
-def reformat(file_path):
-    # Memuat workbook
-    wb = load_workbook(file_path)
-    
-    for ws in wb.worksheets:
-        for col in ws.columns:
-            if col[0].column >= 2:
-                for cell in col:
-                    cell.number_format = '_(* #,##0_);_(* (#,##0);_(* "–"??_);_(@_)'  
-        for cell in ws[1]:
-            cell.alignment = Alignment(wrap_text=True)
-    wb.save(file_path)
-
 def merge_data(folder_path, output_file):
     new_wb = openpyxl.Workbook()
     new_wb.remove(new_wb.active)  # Hapus sheet default
@@ -105,6 +92,8 @@ folder_data = "D:\\Publikasi UTP\\data prov" # Ganti dengan folder data yang aka
 folder_outp = "D:\\Publikasi UTP\\filter prov" # Ganti dengan path folder output hasil run filter
 
 def filter_data(inp, outp, set, kode, nama):
+
+    # Iter nama file XLSX dalam folder
     for index, dirs, files in os.walk(inp):
         for a in files:
             print("Reading %s"%(a))
@@ -145,8 +134,14 @@ def filter_data(inp, outp, set, kode, nama):
                 df6401.iloc[sz-1, 2] = nama
                 df6401 = df6401.drop(df6401.columns[rm_kab], axis=1)
 
+            # Apply format angka dan desimal ke data hasil filter
+            for col in range(1, len(df6401.columns)):
+                if df6401.iloc[:, col].dtype.kind in 'i':
+                    df6401.iloc[:, col] = df6401.iloc[:, col].map('{:,}'.format)
+                elif df6401.iloc[:, col].dtype.kind in 'f':
+                    df6401.iloc[:, col] = df6401.iloc[:, col].map('{:,.2f}'.format)
+            
             df6401.fillna("–", inplace=True)
-            df6401.style.format(formatter='{:.0f}', thousands=".")
             df6401.to_excel("%s\\%s_%s.xlsx"%(outp, make_xlsx_name(a), make_sheet_name(a)), sheet_name=make_sheet_name(a))
 
 # contoh pemakaian untuk filter data :
