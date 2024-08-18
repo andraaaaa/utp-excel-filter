@@ -55,7 +55,7 @@ Contoh keluaran nama file :
 
 Contoh output tabel :
 
-![img](https://i.ibb.co.com/s9HPhwG/Screenshot-2024-08-11-081757.png)
+![img](https://i.ibb.co.com/0tKrVNw/Screenshot-2024-08-18-203510.png)
 
 _Catatan : File dan sheet name sudah otomatis mengambil dari nama tabel mentah secara default, sehingga pengguna tidak perlu mengotak-atik nama tabel mentah yang akan difilter._
 
