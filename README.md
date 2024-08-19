@@ -1,6 +1,4 @@
-**[!!] Update 18 Agustus** :
-
-Reformatter sudah dimasukkan dengan fungsi inti sebelum export data
+**[!!] Update 18 Agustus** : Reformatter sudah terintegrasi dengan fungsi inti
 
 ## Python Code Filter dan Merger Data Excel untuk Publikasi UTP
 Source Code untuk memisahkan file sesuai filter provinsi atau kabupaten dalam rangka penyusunan Publikasi ST2023 UTP Tahap II.
@@ -18,7 +16,9 @@ One-time line install :
 `pip install "pandas==2.2.2" "openpyxl==3.1.5" "xlrd==2.0.1"`
   
 **Catatan Atas**
-- Nama file yang digunakan sebagai input (nonsingle) : **Nasional_Tabulasi_UTP_BAB_ [nomorbab] _tabel _[nomor_tabel_dgn_underscore] _komoditas _[kode_komoditas]**
+- Nama file yang digunakan sebagai input (nonsingle) :
+
+  `Nasional_Tabulasi_UTP_BAB_[nomorbab]_tabel_[nomor_tabel_dgn_underscore]_komoditas_[kode_komoditas]`
 - Code ini masih dalam tahap pengembangan, untuk fungsi dasar sudah berjalan sebagaimana mestinya.
 
 ### **Persiapan**
@@ -26,7 +26,7 @@ Sebelum melakukan filtering, perlu diperhatikan beberapa step awal :
 
 1. Menggabungkan **SELURUH** data yang akan difilter (boleh dengan subfolder) menjadi satu folder
 2. Membuat folder baru untuk data hasil filter
-3. Menginstall package pandas (jika sudah ada, silakan upgrade ke versi terbaru)
+3. Menginstall package yang diperlukan
 
 ### **Fungsi-Fungsi**
 
